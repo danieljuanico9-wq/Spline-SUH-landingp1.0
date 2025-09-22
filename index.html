@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Demo Planta 3D</title>
+  <meta name="description" content="Demo self-hosted con escena Spline y landing simple"/>
+  <style>
+    :root{--bg:#0f1218;--fg:#e8eef9;--muted:#9aa6bd}
+    *{box-sizing:border-box} html,body{height:100%}
+    body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.4 system-ui,-apple-system,Segoe UI,Roboto}
+    header{padding:18px 20px;border-bottom:1px solid #1e2330}
+    .wrap{max-width:1100px;margin:0 auto;padding:20px}
+    h1{margin:0 0 8px;font-size:28px}
+    p{margin:0 0 16px;color:var(--muted)}
+    .grid{display:grid;grid-template-columns:1fr;gap:20px}
+    @media (min-width:900px){.grid{grid-template-columns:1.1fr .9fr}}
+    .frame{position:relative;width:100%;aspect-ratio:16/9;border:0;border-radius:16px;overflow:hidden;box-shadow:0 10px 30px #0006}
+    .btn{display:inline-block;padding:10px 14px;background:#2a3246;color:#fff;border-radius:10px;text-decoration:none}
+    footer{opacity:.7;padding:20px 0;text-align:center}
+  </style>
+</head>
+<body>
+  <header><div class="wrap"><strong>Dashboard 3D – Demo</strong></div></header>
+
+  <main class="wrap grid">
+    <section>
+      <h1>Planta 3D (Mock)</h1>
+      <p>Escena self-hosted exportada desde Spline. Mañana la conectamos a datos (mock DB → colores/estados).</p>
+      <a class="btn" href="https://danieljuanico9-wq.github.io/Spline-SUH/" target="_blank">Abrir a pantalla completa</a>
+    </section>
+
+    <section>
+      <div class="frame">
+        <iframe
+          src="https://danieljuanico9-wq.github.io/Spline-SUH/"
+          width="100%" height="100%"
+          allow="xr-spatial-tracking; fullscreen; vr"
+          style="border:0"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>© Demo interna — Spline + Self-Hosted</footer>
+</body>
+</html>
